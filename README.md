@@ -1,27 +1,48 @@
 # Palpet
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.2.
+Esse é o repositório para a aplicação palpet. Um sistema para gerenciamento pet.
 
-## Development server
+Desenvolvido com:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+&nbsp;![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 
-## Code scaffolding
+## Como inicializar?
+Realize o clone deste repositório na pasta de sua preferência em seu terminal
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+`git clone git@github.com:marisobreiro/palpet.git`
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Acesse a pasta do projeto via terminal e inicialize o backend da aplicação
 
-## Running unit tests
+`npm run backend`
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-## Running end-to-end tests
+Em seguida, em outro terminal, inicialize o fronend da aplicação
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+`npm start`
 
-## Further help
+## Stack utilizada
+ - Angular
+ - Angular Material
+ - Sass
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+ ## Problema proposto
+ Para o desafio, o projeto deverá ter:
+
+ - Data binding
+ - Diretivas
+ - Serviços
+ - Requisições HTTP
+ - Routers com Lazy Load
+ - Formulários reativos + Custom validation
+ - CRUD
+ - Comunicação entre componentes (F -> P Emitter | I -> I Subject)
+ - Desafio: Switch Method
+
+## Roadmap
+- [x] Criação do projeto + repositório Github
+- [ ] Criação dos componentes da aplicação + UI
+- [ ] Criação do banco de dados - JSON server
+- [ ] Header + Router links
+- [ ] Home
+- [ ] Página de cadastros do banco - Renderização de lista
