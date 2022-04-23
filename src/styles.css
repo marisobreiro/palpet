@@ -13,13 +13,13 @@ body {
   background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
-  font-family: 'Quicksand', sans-serif;
+  font-family: 'Quicksand', sans-serif !important;
   justify-content: center;
   text-transform: lowercase;
 }
 
 .container {
-  background-color: var(--ct-color);
+  background-color: #FFFFFf;
   border-radius: 12px;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.082);
   color: var(--txt-color);
@@ -28,3 +28,9 @@ body {
   padding: 1rem;
   width: 80vw;
 }
+
+.icon {
+  color: var(--nav) !important;
+}
+
+html, body { height: 100%; }
