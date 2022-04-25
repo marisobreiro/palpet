@@ -1,0 +1,17 @@
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-edit {
+  color: var(--nav);
+}
+
+.btn-remove {
+  color: red !important;
+}
+
+

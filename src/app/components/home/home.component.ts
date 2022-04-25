@@ -7,6 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  pets = 'pets';
+  plink = '/pets'
+
+  agenda = 'calendar_month';
+  agdlink = '/agenda';
+
+
+  adoption = 'volunteer_activism';
+  adptlink = '/adoption';
+
   constructor() { }
 
   ngOnInit(): void {

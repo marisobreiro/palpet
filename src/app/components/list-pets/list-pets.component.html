@@ -1,1 +1,37 @@
-<p>list-pets works!</p>
+<main>
+  <section>
+    <table>
+      <caption>Pets</caption>
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Raça</th>
+          <th scope="col">Pal</th>
+          <th scope="col">Contato</th>
+          <th scope="col">Editar</th>
+          <th scope="col">Remover</th>
+
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pet of pets">
+          <td data-label="ID">{{ pet.id }}</td>
+          <td data-label="Nome">{{ pet.name }}</td>
+          <td data-label="Tipo">{{ pet.type }}</td>
+          <td data-label="Raça">{{ pet.breed }}</td>
+          <td data-label="Pal">{{ pet.pal }}</td>
+          <td data-label="Contato">{{ pet.contact }}</td>
+          <td data-label="Editar">
+            <app-icon-button [icon]="edit" [link]="editlink" class="btn-edit"></app-icon-button>
+          </td>
+          <td data-label="Remover">
+            <app-icon-button [icon]="remove" [link]="removelink" class="btn-remove"></app-icon-button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <app-fab-button [icon]="back" [link]="backlink" class="back-btn"></app-fab-button>
+</main>

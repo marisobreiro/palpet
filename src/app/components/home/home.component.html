@@ -4,14 +4,8 @@
         <img src="/assets/img.jpg" class="home__img"  alt="">
     </section>
     <section class="home__actions">
-        <button mat-fab class="icon" aria-label="Example icon button with a delete icon" routerLink="/pets">
-            <mat-icon>pets</mat-icon>
-        </button>
-        <button mat-fab class="icon" aria-label="Example icon button with a delete icon" routerLink="/agenda">
-            <mat-icon>calendar_month</mat-icon>
-        </button>
-        <button mat-fab class="icon" aria-label="Example icon button with a delete icon" routerLink="/adoption">
-            <mat-icon>volunteer_activism</mat-icon>
-        </button>
+        <app-fab-button [icon]="pets" [link]="plink"></app-fab-button>
+        <app-fab-button [icon]="agenda" [link]="agdlink"></app-fab-button>
+        <app-fab-button [icon]="adoption" [link]="adptlink"></app-fab-button>
   </section>
 </main>

@@ -1,4 +1,7 @@
+import { AdoptionService } from './../../services/adoption.service';
 import { Component, OnInit } from '@angular/core';
+
+import { Adoption } from './../../interfaces/Adoption';
 
 @Component({
   selector: 'app-adoption',
@@ -7,9 +10,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AdoptionComponent implements OnInit {
 
-  constructor() { }
+  back = 'arrow_back';
+  link = '/';
+
+  pets?: Adoption[];
+
+  constructor(private service: AdoptionService) { }
 
   ngOnInit(): void {
+    this.service.listAdoption()
+    .subscribe(dados => this.pets = dados);
   }
 
 }

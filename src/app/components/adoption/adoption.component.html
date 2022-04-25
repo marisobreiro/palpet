@@ -1,1 +1,24 @@
-<p>adoption works!</p>
+<main>
+  <section>
+    <table>
+      <caption>Adoção</caption>
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">Nome</th>
+          <th scope="col">Tipo</th>
+          <th scope="col">Raça</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let pet of pets">
+          <td data-label="ID">{{ pet.id }}</td>
+          <td data-label="Nome">{{ pet.name }}</td>
+          <td data-label="Tipo">{{ pet.type }}</td>
+          <td data-label="Raça">{{ pet.breed }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <app-fab-button [icon]="back" [link]="link" class="back-btn"></app-fab-button>
+</main>
