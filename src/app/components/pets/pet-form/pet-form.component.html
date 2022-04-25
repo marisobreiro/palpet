@@ -1,1 +1,46 @@
-<p>pet-form works!</p>
+<main>
+  <form action="">
+    <div>
+      <label for="name">Nome do pet
+      </label><input type="text" name="name" id="name" placeholder="Digite o nome do pet aqui">
+    </div>
+    <div class="form__type">
+      <div class="form__type-input">
+        <label for="">Tipo de animal</label>
+        <select name="type" id="">
+          <option [value]="type.name" *ngFor="let type of types">
+            {{ type.name }}
+          </option>
+        </select>
+      </div>
+      <div class="form__type-input">
+        <label for="">Raça do animal</label>
+        <input type="text" name="" id="" placeholder="Digite a raça do pet aqui">
+      </div>
+    </div>
+    <div>
+      <label for="pal">Pal (Responsável pelo pet)
+      </label><input type="text" name="name" id="name" placeholder="Digite o nome do responsável pelo pet aqui">
+    </div>
+    <div class="form__type">
+      <div class="form__type-input">
+        <label for="">Contato</label>
+        <input type="text" name="" id="" placeholder="Insira o contato do responsável aqui">
+      </div>
+      <div class="form__type-input">
+        <label for="">Tipo do contato</label>
+        <select name="type" id="">
+          <option [value]="contact.name" *ngFor="let contact of contacts">
+            {{ contact.name }}
+          </option>
+        </select>
+      </div>
+    </div>
+    <button class="form__button">Adicionar pet</button>
+  </form>
+  <section class="pets__action">
+    <app-fab-button [icon]="back" [link]="backlink" class="icon"></app-fab-button>
+  </section>
+</main>
+
+
