@@ -7,8 +7,6 @@ import { PetsRoutingModule } from './pet.routing.module';
 import { ButtonsModule } from './../UI/buttons/buttons.module';
 
 import { PetsComponent } from './pets.component';
-import { PetFormComponent } from './pet-form/pet-form.component';
-
 
 @NgModule({
     declarations: [

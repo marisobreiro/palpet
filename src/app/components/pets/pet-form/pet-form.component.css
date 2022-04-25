@@ -12,27 +12,26 @@ form {
   margin: 2rem;
 }
 
-div {
+section, div {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-input, select {
+
+select {
   border: none;
   border-bottom: 1px solid var(--txt-color);
   color: var(--nav);
   font: var(--font);
-  margin: 1rem 0;
+  margin: 1.5rem 0;
   padding: 0.5rem;
 }
 
-input::placeholder {
+span {
   font-size: 0.8rem;
-}
-
-input:active, input:hover {
-  outline: 0;
+  color: brown;
+  margin-top: 0
 }
 
 .form__type {
@@ -50,7 +49,8 @@ input:active, input:hover {
   align-self: flex-end;
   background-color: var(--nav);
   border: none;
-  border-radius: 12px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.144);
   color: var(--secondary);
   font: var(--text);
   padding: 0.5rem;

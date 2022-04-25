@@ -1,0 +1,22 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid var(--txt-color);
+  color: var(--nav);
+  font: var(--font);
+  margin: 1.5rem 0;
+  padding: 0.5rem;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+input:active, input:hover {
+  outline: 0;
+}
