@@ -1,17 +1,20 @@
-import { PetlistService } from './../../services/petlist.service';
 import { Component, OnInit } from '@angular/core';
+import { PetlistService } from '../../services/petlist.service';
 
 import { Pets } from 'src/app/interfaces/Pets';
 
 @Component({
-  selector: 'app-list-pets',
-  templateUrl: './list-pets.component.html',
-  styleUrls: ['./list-pets.component.css']
+  selector: 'app-pets',
+  templateUrl: './pets.component.html',
+  styleUrls: ['./pets.component.css']
 })
-export class ListPetsComponent implements OnInit {
+export class PetsComponent implements OnInit {
 
   back = 'arrow_back';
   backlink = '/';
+
+  add = 'add';
+  addpetlink = '/pets/newpet';
 
   edit = 'edit';
   editlink = '/';
