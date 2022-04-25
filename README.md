@@ -29,20 +29,27 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
  ## Problema proposto
  Para o desafio, o projeto deverá ter:
 
- - Data binding
- - Diretivas
- - Serviços
- - Requisições HTTP
- - Routers com Lazy Load
- - Formulários reativos + Custom validation
- - CRUD
- - Comunicação entre componentes (F -> P Emitter | I -> I Subject)
- - Desafio: Switch Method
+ - [x] Data binding
+ - [x] Diretivas
+ - [x] Serviços
+ - [x] Requisições HTTP
+ - [] Routers com Lazy Load
+ - [] Formulários reativos + Custom validation
+ - [] CRUD
+ - [x] Comunicação entre componentes (F -> P Emitter | I -> I Subject)
+ - [] Desafio: Switch Method
 
 ## Roadmap
 - [x] Criação do projeto + repositório Github
-- [ ] Criação dos componentes da aplicação + UI
-- [ ] Criação do banco de dados - JSON server
-- [ ] Header + Router links
-- [ ] Home
-- [ ] Página de cadastros do banco - Renderização de lista
+- [x] Criação dos componentes da aplicação + UI
+- [x] Criação do banco de dados - JSON server
+- [x] Header + Router links
+- [x] Home
+- [x] Página de cadastros do banco - Renderização de lista
+- [x] Botões de usabilidade da aplicação
+- [x] Petlist - Deletar
+- [x] Petlist - Adicionar
+- [ ] Petlist - Editar
+- [ ] Formulário de cadastro pet
+- [ ] Adicionar pet ao BD e exibir na Petlist
+- [ ] 

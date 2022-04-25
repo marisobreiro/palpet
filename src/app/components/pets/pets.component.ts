@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { PetlistService } from '../../services/petlist.service';
+import { PetlistService } from '../../services/petlist/petlist.service';
 
 import { Pets } from 'src/app/interfaces/Pets';
 
@@ -20,14 +20,20 @@ export class PetsComponent implements OnInit {
   editlink = '/';
 
   remove = 'delete';
-  removelink = '/';
+  removelink = '/pets';
 
-  pets?: Pets[];
+  pets!: Pets[];
 
-  constructor(private service: PetlistService) { }
+  constructor(
+    private service: PetlistService) { }
 
   ngOnInit(): void {
     this.service.listPets().subscribe(dados => this.pets = dados);
+  }
+
+  removePet(pet: Pets) {
+    this.pets = this.pets.filter((a) => pet.name !== a.name); //Remove do front-end
+    this.service.removePet(pet.id).subscribe(); //Comunica com o serviço
   }
 
 }

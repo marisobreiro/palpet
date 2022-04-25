@@ -1,30 +1,108 @@
 {
   "pets": [
-    { "id": 1, "name": "ST", "type": "Dog", "breed": "SRD", "pal": "Mariana", "contact": "41988282525"},
-    { "id": 2, "name": "Pipoca", "type": "Dog", "breed": "Maltês", "pal": "Priscila", "contact": "41988222222"},
-    { "id": 3, "name": "Duque", "type": "Dog", "breed": "SRD", "pal": "Dayane", "contact": "41988222222"},
-    { "id": 4, "name": "Flocos", "type": "Cat", "breed": "SRD", "pal": "Dayane", "contact": "4198822222"},
-    { "id": 5, "name": "Artur", "type": "Cat", "breed": "SRD", "pal": "Dayane", "contact": "41988282222"},
-    { "id": 6, "name": "Dino", "type": "Dog", "breed": "São Bernardo", "pal": "Silvio", "contact": "41988282222"},
-    { "id": 7, "name": "Koka", "type": "Dog", "breed": "New Fonderland", "pal": "Adriana", "contact": "4198822222"}
+    {
+      "id": 1,
+      "name": "ST",
+      "type": "Dog",
+      "breed": "SRD",
+      "pal": "Mariana",
+      "contact": "41988282525"
+    },
+    {
+      "id": 2,
+      "name": "Pipoca",
+      "type": "Dog",
+      "breed": "Maltês",
+      "pal": "Priscila",
+      "contact": "41988222222"
+    },
+    {
+      "id": 3,
+      "name": "Duque",
+      "type": "Dog",
+      "breed": "SRD",
+      "pal": "Dayane",
+      "contact": "41988222222"
+    },
+    {
+      "id": 4,
+      "name": "Flocos",
+      "type": "Cat",
+      "breed": "SRD",
+      "pal": "Dayane",
+      "contact": "4198822222"
+    },
+    {
+      "id": 5,
+      "name": "Artur",
+      "type": "Cat",
+      "breed": "SRD",
+      "pal": "Dayane",
+      "contact": "41988282222"
+    }
   ],
   "adoption": [
-    { "id": 1, "name": "Caramelo", "type": "Dog", "breed": "SRD"},
-    { "id": 2, "name": "Pintada", "type": "Cat", "breed": "SRD"},
-    { "id": 3, "name": "Otavio", "type": "Dog", "breed": "SRD"}
+    {
+      "id": 1,
+      "name": "Caramelo",
+      "type": "Dog",
+      "breed": "SRD"
+    },
+    {
+      "id": 2,
+      "name": "Pintada",
+      "type": "Cat",
+      "breed": "SRD"
+    },
+    {
+      "id": 3,
+      "name": "Otavio",
+      "type": "Dog",
+      "breed": "SRD"
+    }
   ],
   "types": [
-    { "id": 1, "name": "Cachorro"},
-    { "id": 2, "name": "Gato"},
-    { "id": 3, "name": "Coelho"},
-    { "id": 4, "name": "Papagaio"},
-    { "id": 5, "name": "Tartaruga"},
-    { "id": 6, "name": "Peixe"}
+    {
+      "id": 1,
+      "name": "Cachorro"
+    },
+    {
+      "id": 2,
+      "name": "Gato"
+    },
+    {
+      "id": 3,
+      "name": "Coelho"
+    },
+    {
+      "id": 4,
+      "name": "Papagaio"
+    },
+    {
+      "id": 5,
+      "name": "Tartaruga"
+    },
+    {
+      "id": 6,
+      "name": "Peixe"
+    }
   ],
   "contact": [
-    { "id": 1, "name": "Celular"},
-    { "id": 2, "name": "Telefone fixo"},
-    { "id": 1, "name": "WhatsApp"},
-    { "id": 1, "name": "SMS"}
+    {
+      "id": 1,
+      "name": "Celular"
+    },
+    {
+      "id": 2,
+      "name": "Telefone fixo"
+    },
+    {
+      "id": 1,
+      "name": "WhatsApp"
+    },
+    {
+      "id": 1,
+      "name": "SMS"
+    }
   ]
 }

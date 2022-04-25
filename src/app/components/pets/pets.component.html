@@ -27,7 +27,7 @@
             <app-icon-button [icon]="edit" [link]="editlink" class="btn-edit"></app-icon-button>
           </td>
           <td data-label="Remover">
-            <app-icon-button [icon]="remove" [link]="removelink" class="btn-remove"></app-icon-button>
+            <app-icon-button [icon]="remove" [link]="removelink" class="btn-remove" (click)="removePet(pet)"></app-icon-button>
           </td>
         </tr>
       </tbody>
