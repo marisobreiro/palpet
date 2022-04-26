@@ -11,7 +11,7 @@ import { Adoption } from './../../interfaces/Adoption';
 export class AdoptionComponent implements OnInit {
 
   back = 'arrow_back';
-  link = '/';
+  link = '/home';
 
   pets?: Adoption[];
 

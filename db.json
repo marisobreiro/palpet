@@ -26,19 +26,12 @@
     },
     {
       "id": 4,
-      "name": "Flocos",
-      "type": "Cat",
-      "breed": "SRD",
-      "pal": "Dayane",
-      "contact": "4198822222"
-    },
-    {
-      "id": 5,
       "name": "Artur",
-      "type": "Cat",
+      "type": "Gato",
       "breed": "SRD",
       "pal": "Dayane",
-      "contact": "41988282222"
+      "contact": "419882876222",
+      "typecontact": "WhatsApp"
     }
   ],
   "adoption": [

@@ -1,12 +1,11 @@
+import { PetsModule } from './components/pets/pets.module';
+import { ButtonsModule } from './components/UI/buttons/buttons.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 
-// Custom modules
-import { PetsModule } from './components/pets/pets.module';
-import { ButtonsModule } from './components/UI/buttons/buttons.module';
-
+//Custom modules
 // Material Design
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -18,6 +17,7 @@ import { HomeComponent } from './components/home/home.component';
 import { LoaderComponent } from './components/UI/loader/loader.component';
 import { AgendaComponent } from './components/agenda/agenda.component';
 import { AdoptionComponent } from './components/adoption/adoption.component';
+import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 
 @NgModule({
   declarations: [
@@ -27,16 +27,17 @@ import { AdoptionComponent } from './components/adoption/adoption.component';
     HomeComponent,
     LoaderComponent,
     AgendaComponent,
-    AdoptionComponent
+    AdoptionComponent,
+    PageNotFoundComponent
   ],
   imports: [
+    // @angular
     BrowserModule,
-    AppRoutingModule,
     HttpClientModule,
-    PetsModule,
-    ButtonsModule,
     BrowserAnimationsModule,
-  ],
+    AppRoutingModule,
+    ButtonsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

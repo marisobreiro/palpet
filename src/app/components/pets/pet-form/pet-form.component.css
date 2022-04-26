@@ -12,37 +12,52 @@ form {
   margin: 2rem;
 }
 
-section, div {
+.form__input-col{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
+.form__input-row {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form__input-row div {
+  width: 20rem;
+}
+
+input {
+  border: none;
+  border-bottom: 1px solid var(--txt-color);
+  color: var(--nav);
+  font: var(--font);
+  padding: 0.5rem;
+  margin: 1rem 0;
+}
+
+input::placeholder {
+  font-size: 0.8rem;
+}
+
+input:active, input:hover {
+  outline: 0;
+}
 
 select {
   border: none;
   border-bottom: 1px solid var(--txt-color);
   color: var(--nav);
   font: var(--font);
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   padding: 0.5rem;
 }
 
 span {
   font-size: 0.8rem;
   color: brown;
-  margin-top: 0
-}
-
-.form__type {
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.form__type-input {
-  display: flex;
-  width: 40%;
+  margin-top: 0.5rem;
 }
 
 .form__button {

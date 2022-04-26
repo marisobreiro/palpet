@@ -1,4 +1,4 @@
-import { AppRoutingModule } from './../../../app-routing.module';
+import { RouterModule } from '@angular/router';
 import { NgModule } from "@angular/core";
 import { CommonModule } from '@angular/common';
 
@@ -15,13 +15,14 @@ import { FabButtonComponent } from './fab-button/fab-button.component';
   ],
   imports: [
     CommonModule,
-    AppRoutingModule,
     MatIconModule,
-    MatButtonModule
+    MatButtonModule,
+    RouterModule
   ],
   exports: [
     FabButtonComponent,
-    IconButtonComponent
+    IconButtonComponent,
+    CommonModule
   ],
 })
 

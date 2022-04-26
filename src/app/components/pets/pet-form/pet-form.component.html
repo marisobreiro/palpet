@@ -1,65 +1,39 @@
 <main>
-  <form (ngSubmit)="addPet()" [formGroup]="petForm" #formDir="ngForm">
-    <section>
-      <app-input
-        [type]="text"
-        [name]="petnamelabel"
-        [placeholder]="petnameph"
-        [maxlenght]="petnamemaxl"
-        formControlName="name">
-      </app-input>
-      <span *ngIf="name.invalid && formDir.submitted" class="msg-error">
+  <form (ngSubmit)="addPet()" [formGroup]="petForm" #formDir="ngForm" >
+    <section class="form__input-col">
+      <label for="name">Nome do pet</label>
+      <input type="text" placeholder="Insira o nome do pet aqui" formControlName="name" required>
+      <span *ngIf="name.invalid && formDir.submitted">
         <p *ngIf="name.errors?.['required']">O nome do pet é obrigatório!</p>
       </span>
     </section>
-    <section>
-      <div>
-        <label for="">Tipo de animal</label>
-        <select name="type" id="">
+    <section class="form__input-row">
+      <div class="form__input-col">
+        <label for="type">Tipo de animal</label>
+        <select id="type" formControlName="type">
           <option>Selecione um tipo</option>
           <option [value]="type.name" *ngFor="let type of types">
             {{ type.name }}
           </option>
         </select>
       </div>
-      <div>
-        <app-input
-          [type]="text"
-          [name]="breedlabel"
-          [placeholder]="breedplaceholder"
-          [maxlenght]="breedmaxlenght">
-        </app-input>
-        <span *ngIf="name.invalid && formDir.submitted" class="msg-error">
-          <p *ngIf="name.errors?.['required']">O tipo da raça do pet é obrigatório!</p>
-        </span>
+      <div class="form__input-col">
+        <label for="name">Tipo da raça</label>
+        <input type="text" placeholder="Insira o nome da raça do pet" formControlName="breed">
       </div>
     </section>
-    <section>
-      <app-input
-        [type]="text"
-        [name]="palname"
-        [placeholder]="palplaceholder"
-        [maxlenght]="palmaxlength" >
-      </app-input>
-      <span *ngIf="name.invalid && formDir.submitted" class="msg-error">
-        <p *ngIf="name.errors?.['required']">O nome do responsável é obrigatório!</p>
-      </span>
+    <section class="form__input-col">
+      <label for="name">pal (Responsável pelo pet)</label>
+      <input type="text" placeholder="Insira o nome do responsável aqui" formControlName="pal">
     </section>
-    <section>
-      <div>
-        <app-input
-          [type]="number"
-          [name]="contactname"
-          [placeholder]="contactplaceholder"
-          [maxlenght]="contactmaxlenght">
-        </app-input>
-        <span *ngIf="name.invalid && formDir.submitted" class="msg-error">
-          <p *ngIf="name.errors?.['required']">O número do responsável é obrigatório!</p>
-        </span>
+    <section class="form__input-row">
+      <div class="form__input-col">
+        <label for="name">Nome do pet</label>
+        <input type="text" placeholder="Insira número para contato" formControlName="contact">
       </div>
-      <div>
-        <label for="">Tipo do contato</label>
-        <select name="type" id="">
+      <div class="form__input-col">
+        <label for="contacttype">Tipo do contato</label>
+        <select id="contacttype" formControlName="typecontact">
           <option>Selecione um tipo</option>
           <option [value]="contact.name" *ngFor="let contact of contacts">
             {{ contact.name }}
@@ -67,7 +41,7 @@
         </select>
       </div>
     </section>
-    <button class="form__button">Adicionar pet</button>
+    <button class="form__button" type="submit">Adicionar pet</button>
   </form>
   <section class="pets__action">
     <app-fab-button [icon]="back" [link]="backlink" class="icon"></app-fab-button>

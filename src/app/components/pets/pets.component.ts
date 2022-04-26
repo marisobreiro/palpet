@@ -11,10 +11,10 @@ import { Pets } from 'src/app/interfaces/Pets';
 export class PetsComponent implements OnInit {
 
   back = 'arrow_back';
-  backlink = '/';
+  backlink = '/home';
 
   add = 'add';
-  addpetlink = '/pets/newpet';
+  addpetlink = 'newpet';
 
   edit = 'edit';
   editlink = '/';

@@ -1,12 +1,13 @@
-import { Contact } from './../../../interfaces/Contact';
-import { ContactService } from './../../../services/contact/contact.service';
+import { PetlistService } from './../../../services/petlist/petlist.service';
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormGroup, FormControl, FormBuilder, Validators } from '@angular/forms';
 
 import { PetsType } from 'src/app/interfaces/PetsType';
-
+import { Contact } from './../../../interfaces/Contact';
 
 import { PettypeService } from '../../../services/petstype/petstype.service';
+import { ContactService } from './../../../services/contact/contact.service';
+
 
 
 @Component({
@@ -16,71 +17,62 @@ import { PettypeService } from '../../../services/petstype/petstype.service';
 })
 export class PetFormComponent implements OnInit {
 
-  petForm!: FormGroup;
-
   types!: PetsType[];
 
   contacts!: Contact[];
 
-  //HTML data
+  petForm!: FormGroup;
 
+  //Buttons data
   back = 'arrow_back';
   backlink = '/pets';
 
-  text = 'text';
-  number = 'number';
-
-  petnamelabel = 'Nome do pet'
-  petnameph = 'Insira o nome do pet aqui'
-  petnamemaxl = 30;
-
-  breedlabel = 'Tipo da raça';
-  breedplaceholder = 'Digite o nome da raça do pet';
-  breedmaxlenght = 15;
-
-  palname = 'Pal (Responsável pelo pet)';
-  palplaceholder = 'Digite o nome do responsável'
-  palmaxlength = 20;
-
-  contactname = 'Contato';
-  contactplaceholder = "Insira o número do responsável"
-  contactmaxlenght = 12;
-
-  //
-
   constructor(
-    private formBuilder: FormBuilder,
     private servicePetType: PettypeService,
-    private serviceContact: ContactService
+    private serviceContact: ContactService,
+    private formBuilder: FormBuilder,
+    private servicePetList: PetlistService
     ) { }
 
   ngOnInit(): void {
 
-    this.petForm = this.formBuilder.group({
-      id: [null],
-      name: [null, Validators.required],
-      type: [null],
-      breed: [null],
-      pal: [null],
-      contact: [null]
-    });
-
+    //Form select lists
     this.servicePetType.listPetTypes()
     .subscribe(dados => this.types = dados);
 
     this.serviceContact.listContactTypes()
     .subscribe(itens => this.contacts = itens)
+
+    //Form validation
+
+    this.petForm = this.formBuilder.group({
+      id: [''],
+      name: ['', Validators.required],
+      type: ['', Validators.required],
+      breed: ['', Validators.required],
+      pal: ['', Validators.required],
+      contact: ['', Validators.required],
+      typecontact: ['', Validators.required]
+    })
   }
 
   get name() {
     return this.petForm.get('name')!;
   }
 
+  //Submit
   addPet() {
-    if (this.petForm.invalid) {
+    if (this.petForm.invalid){
       return;
     }
-    console.log('Enviou o form')
+    console.log(this.petForm.value)!;
+    this.servicePetList.create(this.petForm.value).subscribe(
+      sucess => {
+        console.log('Pet criado!');
+      },
+      error => console.log(error),
+      () => console.log('Request completa!')
+    );
   }
 
 }
