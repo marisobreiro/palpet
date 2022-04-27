@@ -3,43 +3,46 @@
     {
       "id": 1,
       "name": "ST",
-      "type": "Dog",
+      "type": "Cachorro",
       "breed": "SRD",
-      "pal": "Mariana",
-      "contact": "41988282525"
+      "pal": "Mariana Sobreiro",
+      "contact": "41988282525",
+      "typecontact": "WhatsApp"
     },
     {
       "id": 2,
-      "name": "Pipoca",
-      "type": "Dog",
-      "breed": "Maltês",
-      "pal": "Priscila",
-      "contact": "41988222222"
-    },
-    {
-      "id": 3,
       "name": "Duque",
-      "type": "Dog",
-      "breed": "SRD",
-      "pal": "Dayane",
-      "contact": "41988222222"
-    },
-    {
-      "id": 5,
-      "name": "Koka Matsuda",
       "type": "Cachorro",
-      "breed": "New Founderland",
-      "pal": "Adriana Matsuda",
-      "contact": "87436437843",
+      "breed": "SRD",
+      "pal": "Dayane Lacerda",
+      "contact": "419999999999",
       "typecontact": "Celular"
     },
     {
-      "id": 6,
-      "name": "43434",
+      "id": 3,
+      "name": "Pipoca",
       "type": "Cachorro",
-      "breed": "43434",
-      "pal": "43434",
-      "contact": "43434",
+      "breed": "Maltês",
+      "pal": "Priscila Melo",
+      "contact": "4198888888",
+      "typecontact": "Celular"
+    },
+    {
+      "id": 4,
+      "name": "Koka",
+      "type": "Cachorro",
+      "breed": "New Fonderland",
+      "pal": "Adriana",
+      "contact": "419333333333",
+      "typecontact": "Celular"
+    },
+    {
+      "id": 5,
+      "name": "Pintada",
+      "type": "Tartaruga",
+      "breed": "SRD",
+      "pal": "Pedro",
+      "contact": "419999999999",
       "typecontact": "Celular"
     }
   ],

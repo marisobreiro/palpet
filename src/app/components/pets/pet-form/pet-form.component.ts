@@ -89,8 +89,10 @@ export class PetFormComponent implements OnInit {
       console.log(this.petForm)
       return;
     } else {
-      this.servicePetList.create(this.petForm.value).subscribe(dados => {
-        console.log(dados);
+      this.servicePetList.createPet(this.petForm.value).subscribe(dados => {
+
+        window.alert('Pet cadastrado com sucesso!');
+        window.location.reload();
 
         this.petForm.reset()
       },

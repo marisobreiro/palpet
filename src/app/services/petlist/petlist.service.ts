@@ -22,14 +22,18 @@ export class PetlistService {
   }
 
   removePet(id: number){
-    return this.http.delete<Pets[]>(`${this.urlAPI}/${id}`);
+    return this.http.delete<Pets[]>(`${this.urlAPI}/${id}`).pipe(take(1));
   }
 
-  create(pet: any) {
+  createPet(pet: any) {
     return this.http.post(this.urlAPI, pet).pipe(take(1));
   }
 
-  update(pet: any) {
-    return this.http.put(`${this.urlAPI}/${pet.id}`, pet).pipe(take(1))
+  getPetByID(id: number){
+    return this.http.get(`${this.urlAPI}/${id}`);
+  }
+
+  updatePet(pet: any) {
+    return this.http.put(`${this.urlAPI}/${pet.id}`, pet);
   }
 }
