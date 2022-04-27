@@ -1,0 +1,17 @@
+div {
+    display: flex;
+    flex-direction: column;
+}
+
+.form__button {
+    display: flex;
+    align-self: flex-end;
+    background-color: var(--nav);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.144);
+    color: var(--secondary);
+    font: var(--text);
+    padding: 0.5rem;
+    width: 10rem;
+}

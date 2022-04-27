@@ -1,0 +1,27 @@
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    overflow: scroll;
+}
+
+.btn-edit {
+    color: var(--nav);
+    border: none;
+    background: none;
+}
+
+.btn-remove {
+    color: red !important;
+}
+
+.pets__action {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+

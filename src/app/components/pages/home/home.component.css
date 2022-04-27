@@ -1,0 +1,22 @@
+section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.home__img {
+    width: 20rem;
+    height: 20rem;
+}
+
+.home__actions {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+button {
+    margin: 0 1rem;
+}

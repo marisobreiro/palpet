@@ -1,0 +1,8 @@
+.icon {
+    color: var(--nav) !important;
+    background-color: transparent !important;
+}
+
+button {
+    margin: 1rem;
+}

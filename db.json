@@ -2,7 +2,7 @@
   "pets": [
     {
       "id": 1,
-      "name": "ST",
+      "name": "Sem teto",
       "type": "Cachorro",
       "breed": "SRD",
       "pal": "Mariana",
@@ -16,6 +16,15 @@
       "breed": "Maltês",
       "pal": "Priscila Melo",
       "contact": "(41)99232-3232",
+      "typecontact": "Celular"
+    },
+    {
+      "id": 3,
+      "name": "Flocos",
+      "type": "Gato",
+      "breed": "SRD",
+      "pal": "Felipe",
+      "contact": "(41) 99999-9999",
       "typecontact": "Celular"
     }
   ],

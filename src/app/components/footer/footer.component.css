@@ -1,20 +1,20 @@
 div {
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 p {
-  color: var(--nav);
-  font-size: 0.8rem;
+    color: var(--nav);
+    font-size: 0.8rem;
 }
 
 a {
-  color: var(--nav);
-  text-decoration: none;
+    color: var(--nav);
+    text-decoration: none;
 }
 
 a:visited {
-  color: var(--nav);
+    color: var(--nav);
 }
