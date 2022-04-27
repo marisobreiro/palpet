@@ -33,9 +33,9 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
  - [x] Diretivas
  - [x] Serviços
  - [x] Requisições HTTP
- - [] Routers com Lazy Load
- - [] Formulários reativos + Custom validation
- - [] CRUD
+ - [x] Routers com Lazy Load
+ - [x] Formulários reativos + Custom validation
+ - [!] CRUD
  - [x] Comunicação entre componentes (F -> P Emitter | I -> I Subject)
  - [] Desafio: Switch Method
 
@@ -50,6 +50,6 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
 - [x] Petlist - Deletar
 - [x] Petlist - Adicionar
 - [ ] Petlist - Editar
-- [ ] Formulário de cadastro pet
-- [ ] Adicionar pet ao BD e exibir na Petlist
-- [ ] 
+- [x] Formulário de cadastro pet
+- [x] Adicionar pet ao BD e exibir na Petlist
+ 
