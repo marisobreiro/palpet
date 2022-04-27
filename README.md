@@ -35,9 +35,9 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
  - [x] Requisições HTTP
  - [x] Routers com Lazy Load
  - [x] Formulários reativos + Custom validation
- - [!] CRUD
+ - [x] CRUD
  - [x] Comunicação entre componentes (F -> P Emitter | I -> I Subject)
- - [] Desafio: Switch Method
+ - [!] Desafio: Switch Method
 
 ## Roadmap
 - [x] Criação do projeto + repositório Github
@@ -49,7 +49,7 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
 - [x] Botões de usabilidade da aplicação
 - [x] Petlist - Deletar
 - [x] Petlist - Adicionar
-- [ ] Petlist - Editar
+- [x] Petlist - Editar
 - [x] Formulário de cadastro pet
 - [x] Adicionar pet ao BD e exibir na Petlist
  
