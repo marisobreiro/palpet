@@ -38,7 +38,7 @@
     <section class="form__input-row">
       <div class="form__input-col">
         <label for="name">Contato do pal</label>
-        <input type="text" placeholder="Insira número para contato" formControlName="contact">
+        <input type="text" placeholder="Insira número para contato" formControlName="contact" mask="(00) 00000-0000">
         <span *ngIf="contact.invalid && formDir.submitted">
           <p>O número para contato é obrigatório!</p>
         </span>
@@ -57,7 +57,7 @@
       </div>
     </section>
     <input type="hidden"  formControlName="id"/>
-    <button class="form__button" type="submit">Salvar</button>
+    <button class="form__button" type="submit">Adicionar pet</button>
   </form>
   <section class="pets__action">
     <app-fab-button [icon]="back" [link]="backlink" class="icon"></app-fab-button>

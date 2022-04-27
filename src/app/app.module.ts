@@ -1,3 +1,4 @@
+import { NgxMaskModule } from 'ngx-mask';
 import { PetsModule } from './components/pets/pets.module';
 import { ButtonsModule } from './components/UI/buttons/buttons.module';
 import { NgModule } from '@angular/core';
@@ -36,7 +37,10 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ButtonsModule
+    ButtonsModule,
+    NgxMaskModule.forRoot({
+      dropSpecialCharacters: false
+    })
     ],
   providers: [],
   bootstrap: [AppComponent]

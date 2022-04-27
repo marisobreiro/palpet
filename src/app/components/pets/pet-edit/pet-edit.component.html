@@ -29,7 +29,7 @@
     <section class="form__input-row">
       <div class="form__input-col">
         <label for="name">Nome do pet</label>
-        <input type="text" placeholder="Insira número para contato" formControlName="contact">
+        <input type="text" placeholder="Insira número para contato" formControlName="contact" mask="(00)0000-0000">
       </div>
       <div class="form__input-col">
         <label for="contacttype">Tipo do contato</label>
@@ -42,7 +42,7 @@
       </div>
     </section>
     <input type="hidden"  formControlName="id"/>
-    <button class="form__button" type="submit">Salvar</button>
+    <button class="form__button" type="submit">Salvar alterações</button>
   </form>
   <section class="pets__action">
     <app-fab-button [icon]="back" [link]="backlink" class="icon"></app-fab-button>

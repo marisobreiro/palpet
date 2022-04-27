@@ -8,10 +8,6 @@ import { Contact } from './../../../interfaces/Contact';
 
 import { PettypeService } from '../../../services/petstype/petstype.service';
 import { ContactService } from './../../../services/contact/contact.service';
-import { map, switchMap } from 'rxjs';
-import { HttpParams } from '@angular/common/http';
-
-
 
 @Component({
   selector: 'app-pet-form',
@@ -50,11 +46,11 @@ export class PetFormComponent implements OnInit {
     this.petForm = this.formBuilder.group({
       id: [''],
       name: ['', Validators.required],
-      type: ['', Validators.required],
+      type: ['Selecione um tipo', Validators.required],
       breed: ['', Validators.required],
       pal: ['', Validators.required],
-      contact: ['', [Validators.required]],
-      typecontact: ['', Validators.required]
+      contact: ['', Validators.required],
+      typecontact: ['Selecione um tipo', Validators.required]
     })
   }
 

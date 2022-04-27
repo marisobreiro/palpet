@@ -5,44 +5,17 @@
       "name": "ST",
       "type": "Cachorro",
       "breed": "SRD",
-      "pal": "Mariana Sobreiro",
-      "contact": "41988282525",
-      "typecontact": "WhatsApp"
-    },
-    {
-      "id": 2,
-      "name": "Duque",
-      "type": "Cachorro",
-      "breed": "SRD",
-      "pal": "Dayane Lacerda",
-      "contact": "419999999999",
+      "pal": "Mariana",
+      "contact": "(41)98828-2525",
       "typecontact": "Celular"
     },
     {
-      "id": 3,
+      "id": 2,
       "name": "Pipoca",
       "type": "Cachorro",
       "breed": "Maltês",
       "pal": "Priscila Melo",
-      "contact": "4198888888",
-      "typecontact": "Celular"
-    },
-    {
-      "id": 4,
-      "name": "Koka",
-      "type": "Cachorro",
-      "breed": "New Fonderland",
-      "pal": "Adriana",
-      "contact": "419333333333",
-      "typecontact": "Celular"
-    },
-    {
-      "id": 5,
-      "name": "Pintada",
-      "type": "Tartaruga",
-      "breed": "SRD",
-      "pal": "Pedro",
-      "contact": "419999999999",
+      "contact": "(41)99232-3232",
       "typecontact": "Celular"
     }
   ],

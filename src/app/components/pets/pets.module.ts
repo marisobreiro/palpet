@@ -4,6 +4,7 @@ import { ReactiveFormsModule } from '@angular/forms'
 
 import { PetsRoutingModule } from './pets-routing.module';
 import { ButtonsModule } from './../UI/buttons/buttons.module';
+import { NgxMaskModule } from 'ngx-mask';
 
 import { PetsComponent } from './pets.component';
 import { PetFormComponent } from './pet-form/pet-form.component';
@@ -21,7 +22,8 @@ import { MatIconModule } from '@angular/material/icon';
     PetsRoutingModule,
     ButtonsModule,
     ReactiveFormsModule,
-    MatIconModule
+    MatIconModule,
+    NgxMaskModule.forChild()
   ]
 })
 export class PetsModule { }
