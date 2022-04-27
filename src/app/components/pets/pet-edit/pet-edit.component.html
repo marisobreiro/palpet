@@ -1,5 +1,5 @@
 <main>
-  <form (ngSubmit)="addPet()" [formGroup]="petForm" #formDir="ngForm" >
+  <form (ngSubmit)="updatePet()" [formGroup]="petForm" #formDir="ngForm" >
     <section class="form__input-col">
       <label for="name">Nome do pet</label>
       <input type="text" placeholder="Insira o nome do pet aqui" formControlName="name">
@@ -16,32 +16,20 @@
             {{ type.name }}
           </option>
         </select>
-        <span *ngIf="type.invalid && formDir.submitted">
-          <p *ngIf="type.errors?.['required']">O tipo do pet é obrigatório!</p>
-        </span>
       </div>
       <div class="form__input-col">
         <label for="name">Tipo da raça</label>
         <input type="text" placeholder="Insira o nome da raça do pet" formControlName="breed">
-        <span *ngIf="breed.invalid && formDir.submitted">
-          <p *ngIf="breed.errors?.['required']">A raça do pet é obrigatória!</p>
-        </span>
       </div>
     </section>
     <section class="form__input-col">
       <label for="name">pal (Responsável pelo pet)</label>
       <input type="text" placeholder="Insira o nome do responsável aqui" formControlName="pal">
-      <span *ngIf="pal.invalid && formDir.submitted">
-        <p *ngIf="pal.errors?.['required']">O nome do pet é obrigatório!</p>
-      </span>
     </section>
     <section class="form__input-row">
       <div class="form__input-col">
-        <label for="name">Contato do pal</label>
+        <label for="name">Nome do pet</label>
         <input type="text" placeholder="Insira número para contato" formControlName="contact">
-        <span *ngIf="contact.invalid && formDir.submitted">
-          <p *ngIf="contact.errors?.['required']">O número para contato é obrigatório!</p>
-        </span>
       </div>
       <div class="form__input-col">
         <label for="contacttype">Tipo do contato</label>
@@ -51,9 +39,6 @@
             {{ contact.name }}
           </option>
         </select>
-        <span *ngIf="typecontact.invalid && formDir.submitted">
-          <p *ngIf="typecontact.errors?.['required']">O nome do pet é obrigatório!</p>
-        </span>
       </div>
     </section>
     <input type="hidden"  formControlName="id"/>

@@ -24,7 +24,9 @@
           <td data-label="Pal">{{ pet.pal }}</td>
           <td data-label="Contato">{{ pet.contact }}</td>
           <td data-label="Editar">
-            <app-icon-button [icon]="edit" [link]="editlink" class="btn-edit"></app-icon-button>
+            <button mat-icon-button class="btn-edit" routerLink="/pets/edit/{{ pet.id }}">
+              <mat-icon>edit</mat-icon>
+            </button>
           </td>
           <td data-label="Remover">
             <app-icon-button [icon]="remove" [link]="removelink" class="btn-remove" (click)="removePet(pet)"></app-icon-button>
@@ -33,6 +35,9 @@
       </tbody>
     </table>
   </section>
+  <ng-template #loading>
+    <p>Carregando pets</p>
+  </ng-template>
   <section class="pets__action">
     <app-fab-button [icon]="back" [link]="backlink"></app-fab-button>
     <app-fab-button [icon]="add" [link]="addpetlink"></app-fab-button>

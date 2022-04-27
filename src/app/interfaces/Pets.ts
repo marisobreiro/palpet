@@ -5,4 +5,5 @@ export interface Pets {
   breed: string;
   pal: string;
   contact: number;
+  typecontact: string;
 }

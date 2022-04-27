@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { PetlistService } from '../../services/petlist/petlist.service';
 
 import { Pets } from 'src/app/interfaces/Pets';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-pets',
@@ -16,16 +17,16 @@ export class PetsComponent implements OnInit {
   add = 'add';
   addpetlink = 'newpet';
 
-  edit = 'edit';
-  editlink = '/';
-
   remove = 'delete';
   removelink = '/pets';
 
   pets!: Pets[];
 
   constructor(
-    private service: PetlistService) { }
+    private service: PetlistService,
+    private router: Router,
+    private route: ActivatedRoute
+    ) { }
 
   ngOnInit(): void {
     this.service.listPets().subscribe(dados => this.pets = dados);
@@ -35,5 +36,6 @@ export class PetsComponent implements OnInit {
     this.pets = this.pets.filter((a) => pet.name !== a.name); //Remove do front-end
     this.service.removePet(pet.id).subscribe(); //Comunica com o serviço
   }
+
 
 }

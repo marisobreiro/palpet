@@ -28,15 +28,6 @@ form {
   width: 20rem;
 }
 
-input {
-  border: none;
-  border-bottom: 1px solid var(--txt-color);
-  color: var(--nav);
-  font: var(--font);
-  padding: 0.5rem;
-  margin: 1rem 0;
-}
-
 input::placeholder {
   font-size: 0.8rem;
 }
@@ -45,7 +36,7 @@ input:active, input:hover {
   outline: 0;
 }
 
-select {
+select, input {
   border: none;
   border-bottom: 1px solid var(--txt-color);
   color: var(--nav);
@@ -57,7 +48,6 @@ select {
 span {
   font-size: 0.8rem;
   color: brown;
-  margin-top: 0.5rem;
 }
 
 .form__button {

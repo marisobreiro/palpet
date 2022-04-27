@@ -8,6 +8,8 @@ main {
 
 .btn-edit {
   color: var(--nav);
+  border: none;
+  background: none;
 }
 
 .btn-remove {
