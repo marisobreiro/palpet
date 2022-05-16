@@ -1,9 +1,27 @@
 # Palpet
 
-Esse é o repositório para a aplicação palpet. Um sistema para gerenciamento de petshops e clínicas veterinárias.
+## 💻 Sobre
 
-Desenvolvido com:
+Repositório da a aplicação palpet. O projeto é um sistema para gerenciamento de petshops e clínicas veterinárias. Nele é possível realizar o cadastro, edição e exclusão de um pet do sistema. 
 
+Também é possível acompanhar os focinhos disponíveis para adoção atráves de uma base alimentada pelos seguidores do palpet. 
+
+##
+<p align=center>
+  Home
+
+  <img src="https://user-images.githubusercontent.com/91204232/168601061-7f9a692b-2a43-436d-b9d4-5979c9e7f724.png" width="600"/>
+
+  Pets cadastrados
+
+  <img src="https://user-images.githubusercontent.com/91204232/168606409-d67c0e78-734e-483a-991f-c718631066d5.png" width="600" />
+
+  Formulário de adicionar/editar pets
+
+  <img src="https://user-images.githubusercontent.com/91204232/168607448-d551b0c7-91a4-4dda-8107-8546fc599e70.png" width="600" />
+</p>
+
+## Stack/Ferramentas
 &nbsp;![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
 
 ## Como inicializar?
@@ -21,12 +39,14 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
 
 `ng s`
 
-## Stack utilizada
+
+## 🔨 Stack/Ferramentas
  - Angular
  - Angular Material
- - Sass
+ - Typescript
+ - JSON-server
 
- ## Problema proposto
+ ## 🧗‍♀️ Desafio
  Para o desafio, o projeto deverá ter:
 
  - [x] Data binding
@@ -75,19 +95,4 @@ Layout desenvolvido pelo Figma.
   
   [Quicksand](https://fonts.google.com/specimen/Quicksand)
   
-  
-
-## Resultado final
-
-Home
-
-<img src="https://user-images.githubusercontent.com/91204232/168601061-7f9a692b-2a43-436d-b9d4-5979c9e7f724.png" width="600"/>
-
-Pets cadastrados
-
-<img src="https://user-images.githubusercontent.com/91204232/168606409-d67c0e78-734e-483a-991f-c718631066d5.png" width="600" />
-
-Formulário de adicionar/editar pets
-
-<img src="https://user-images.githubusercontent.com/91204232/168607448-d551b0c7-91a4-4dda-8107-8546fc599e70.png" width="600" />
-
+ 
