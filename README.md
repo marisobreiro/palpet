@@ -32,11 +32,13 @@ Também é possível acompanhar os focinhos disponíveis para adoção atráves 
 1. Realize o clone deste repositório na pasta de sua preferência em seu terminal
 
     `git clone git@github.com:marisobreiro/palpet.git`
-&nbsp;
+
 2. Acesse a pasta do projeto via terminal e inicialize o backend da aplicação
+ 
     `json-server --watch db.json`
-&nbsp;
+
 3. Em seguida, em outro terminal, inicialize o fronend da aplicação
+
     `ng s`
 
 
