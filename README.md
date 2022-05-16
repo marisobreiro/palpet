@@ -1,6 +1,6 @@
 # Palpet
 
-Esse é o repositório para a aplicação palpet. Um sistema para gerenciamento pet.
+Esse é o repositório para a aplicação palpet. Um sistema para gerenciamento de petshops e clínicas veterinárias.
 
 Desenvolvido com:
 
@@ -19,7 +19,7 @@ Acesse a pasta do projeto via terminal e inicialize o backend da aplicação
 
 Em seguida, em outro terminal, inicialize o fronend da aplicação
 
-`npm start`
+`ng s`
 
 ## Stack utilizada
  - Angular
