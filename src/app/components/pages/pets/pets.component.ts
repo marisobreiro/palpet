@@ -24,8 +24,7 @@ export class PetsComponent implements OnInit {
 
     constructor(
         private service: PetlistService,
-        private router: Router,
-        private route: ActivatedRoute
+
         ) { }
 
     ngOnInit(): void {

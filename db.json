@@ -2,11 +2,11 @@
   "pets": [
     {
       "id": 1,
-      "name": "Sem teto",
+      "name": "St",
       "type": "Cachorro",
       "breed": "SRD",
       "pal": "Mariana",
-      "contact": "(41)98828-2525",
+      "contact": "(41)9888-8888",
       "typecontact": "Celular"
     },
     {
@@ -14,8 +14,8 @@
       "name": "Pipoca",
       "type": "Cachorro",
       "breed": "Maltês",
-      "pal": "Priscila Melo",
-      "contact": "(41)99232-3232",
+      "pal": "Priscila",
+      "contact": "(41)9999-9999",
       "typecontact": "Celular"
     },
     {
@@ -23,7 +23,7 @@
       "name": "Flocos",
       "type": "Gato",
       "breed": "SRD",
-      "pal": "Felipe",
+      "pal": "Dayane",
       "contact": "(41) 99999-9999",
       "typecontact": "Celular"
     }

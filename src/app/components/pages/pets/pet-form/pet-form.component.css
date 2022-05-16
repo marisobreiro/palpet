@@ -9,7 +9,7 @@ main {
 form {
     display: flex;
     flex-direction: column;
-    margin: 2rem;
+    margin: 1rem;
 }
 
 .form__input-col{

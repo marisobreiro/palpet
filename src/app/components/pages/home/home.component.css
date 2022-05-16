@@ -3,7 +3,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 .home__img {
