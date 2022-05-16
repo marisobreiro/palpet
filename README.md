@@ -52,4 +52,42 @@ Em seguida, em outro terminal, inicialize o fronend da aplicação
 - [x] Petlist - Editar
 - [x] Formulário de cadastro pet
 - [x] Adicionar pet ao BD e exibir na Petlist
- 
+- [ ] Customização page adoção
+- [ ] Criação página "agenda"
+
+## Layout
+
+Layout desenvolvido pelo Figma.
+
+  ###### Cartela de Cores
+  
+  `#79B4B7`
+  
+  `#FEFBF3`
+  
+  `#9D9D9D`
+  
+  `#F8F0DF`
+  
+  `#11324D`
+  
+  ###### Font
+  
+  [Quicksand](https://fonts.google.com/specimen/Quicksand)
+  
+  
+
+## Resultado final
+
+Home
+
+<img src="https://user-images.githubusercontent.com/91204232/168601061-7f9a692b-2a43-436d-b9d4-5979c9e7f724.png" width="600"/>
+
+Pets cadastrados
+
+<img src="https://user-images.githubusercontent.com/91204232/168606409-d67c0e78-734e-483a-991f-c718631066d5.png" width="600" />
+
+Formulário de adicionar/editar pets
+
+<img src="https://user-images.githubusercontent.com/91204232/168607448-d551b0c7-91a4-4dda-8107-8546fc599e70.png" width="600" />
+
