@@ -14,7 +14,7 @@ Realize o clone deste repositório na pasta de sua preferência em seu terminal
 
 Acesse a pasta do projeto via terminal e inicialize o backend da aplicação
 
-`npm run backend`
+`json-server --watch db.json`
 
 
 Em seguida, em outro terminal, inicialize o fronend da aplicação
